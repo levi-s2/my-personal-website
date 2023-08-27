@@ -1,17 +1,14 @@
 fetch('http://localhost:3000/popularAnimes')
-.then(function(res) {
-    return res.json()
-})
-.then(function(topAnimes) {
-    topAnimes => {
-        let AnimeCard = topAnimes.map(function(anime) {
-            return `
-            <div class="card">
+.then(r => r.json())
+.then(animes => {
+    let animeCard = animes.map(function(anime){
+        return `
+            <div class="animeCard">
             <h2>${anime.name}</h2>
             <img src=${anime.imgURL}/>
+            </div>
             `
-        })
-        AnimeCard.append(div)
-        console.log(AnimeCard)
-    }
+    })
+    document.querySelector("#card").innerHTML += animeCard.join('')
 })
+
