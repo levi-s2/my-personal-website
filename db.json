@@ -1,54 +1,64 @@
 {
-    "popularAnimes": [
+    "popularBooks": [
         {
             "id": 0,
-            "name": "Hunter x Hunter (2011)",
-            "imgURL": "https://m.media-amazon.com/images/M/MV5BNGM0YTk3MWEtN2JlZC00ZmZmLWIwMDktZTMxZGE5Zjc2MGExXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_FMjpg_UX1000_.jpg"
-        },
+            "name": "Don Quixote",
+            "author": "Miguel de Cervantes",
+            "imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTM9Wr8_pMowlwxxNkH5qfxj7rPVVyLV5Eni3TBev7OcaLTkv5oHFd6biiJ20BEyUP6jOo&usqp=CAU"
+        }, 
         {
             "id": 1,
-            "name": "Attack on Titan",
-            "imgURL": "https://static.wikia.nocookie.net/shingekinokyojin/images/d/d8/Attack_on_Titan_Season_1.jpg/revision/latest?cb=20211005182832"
+            "name": "The Divine Comedy",
+            "author": "Dante Alighieri",
+            "imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQORUY1hSkajLOMH2GsR9BrC4uwx4xjpYZTnEnx9XT5nQpMfKDrxsoi3dEftM5ihX5XW7A&usqp=CAU"
         },
         {
             "id": 2,
-            "name": "Death Note",
-            "imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjfRxcOi8HWkUKk-g9a_FyynPcM5OlTp6lXQ&usqp=CAU"
+            "name": "The Great Gatsby",
+            "author": "F. Scott Fitzgerald",
+            "imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfi4CpGrqQPAt_I5Dp-WAw4yZxO7h7TL1_6Ad8tvuX94v-yR8OEacS13228EeBeRc7IbY&usqp=CAU"
         },
         {
             "id": 3,
-            "name": "One Piece",
-            "imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyTfr6rsWs9HR0C2WTHw_kHFOlgHJbl2Hegg&usqp=CAU"
+            "name": "The Odyssey",
+            "author": "Homer",
+            "imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShh2ytsVe5-agGpwgqV6jO369L--TEwrK9JA&usqp=CAU"
         },
         {
             "id": 4,
-            "name": "Full Metal Alchemist",
-            "imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSA0V_lgXG8uLHmciOy5ebsJs8lVZCVv1M8PQ&usqp=CAU"
+            "name": "Moby Dick",
+            "author": "Herman Melville",
+            "imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgRqpqSNIfhbHnJxzTddCF7zyqGDqB2I2FkWfxvC_hrfJ1iYUsSYjTBYNqer2RFhMtCU4&usqp=CAU"
         },
         {
             "id": 5,
-            "name": "Bleach",
-            "imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmruvvOngNIxDsOuo7jK6X9LMRFuvNVbgiAw&usqp=CAU"
+            "name": "War and Peace",
+            "author": "Leo Tolstoy",
+            "imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDfOo6n_7PHKP6cKLFmLuKAoIEDUS5olHEQw&usqp=CAU"
         },
         {
             "id": 6,
-            "name": "Dr Stone",
-            "imgURL": "https://i0.wp.com/film-bunker.com/wp-content/uploads/2019/11/https___hypebeast.com_image_2019_09_dr-stone-documentary-hypebeast-exclusive-clip-00.jpg?fit=900%2C600&ssl=1"
+            "name": "In Search of Lost Time",
+            "author": "Marcel Proust",
+            "imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoMMLC4XpgA50gr6eqiKxT2SkdnOLsiaKDaFDPkIEWH3n16HdFMN_DFwfhNss4VPIUZek&usqp=CAU"
         },
         {
             "id": 7,
-            "name": "Sword Art Online",
-            "imgURL": "https://images.justwatch.com/poster/254572954/s718/sword-art-online.jpg"
+            "name": "The Prince",
+            "author": "Niccolo Machiavelli",
+            "imgURL": "https://press.uchicago.edu/.imaging/mte/ucp/medium/dam/ucp/books/jacket/978/02/26/50/9780226500430.jpg/jcr:content/9780226500430.jpg"
         },
         {
-            "id": 8,
-            "name": "Naruto",
-            "imgURL": "https://naruto-official.com/anime/series/naruto1_visual.webp"
+        "id": 8,
+        "name": "King Lear",
+        "author": " William Shakespeare",
+        "imgURL": "https://press.uchicago.edu/.imaging/mte/ucp/medium/dam/ucp/books/jacket/978/08/66/98/9780866987974.jpg/jcr:content/9780866987974.jpg"
         },
         {
             "id": 9,
-            "name": "Boku no Hero Academia",
-            "imgURL": "https://www.crunchyroll.com/imgsrv/display/thumbnail/480x720/catalog/crunchyroll/251524e3b5517b689317437d881eccf0.jpe"
+            "name": "Alice's Adventures in Wonderland",
+            "author": "Lewis Carroll",
+            "imgURL": "https://press.uchicago.edu/.imaging/mte/ucp/medium/dam/ucp/books/jacket/978/19/88/96/9781988963372.jpg/jcr:content/9781988963372.jpg"
         }
     ]
 }

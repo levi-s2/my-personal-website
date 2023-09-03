@@ -1,14 +1,15 @@
-fetch('http://localhost:3000/popularAnimes')
+fetch('http://localhost:3000/popularBooks')
 .then(r => r.json())
-.then(animes => {
-    let animeCard = animes.map(function(anime){
+.then(books => {
+    let booksCard = books.map(function(book){
         return `
             <div class="animeCard">
-            <h2>${anime.name}</h2>
-            <img src=${anime.imgURL}/>
+            <h2>${book.name}</h2>
+            <h2>${book.author}</h2>
+            <img src=${book.imgURL}/>
             </div>
             `
     })
-    document.querySelector("#card").innerHTML += animeCard.join('')
+    document.querySelector("#card").innerHTML += booksCard.join('')
 })
 
