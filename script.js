@@ -13,3 +13,4 @@ fetch('http://localhost:3000/popularBooks')
     document.querySelector("#card").innerHTML += booksCard.join('')
 })
 
+

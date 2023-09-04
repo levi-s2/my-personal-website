@@ -8,17 +8,20 @@
     <h1>Popular Books</h1>
     <div id="card">
     </div>
-    <div id="container">
-      <h1>Create your list</h1>
 
-      <input
-      type="text"
-          name="name"
-          value=""
-          placeholder="Books title"
-          class="input-text"
-        />
-    </div>
+    <div id="list-content">
+      <h1>Create your own book list</h1>
+  
+      <form id="create-book-form" action="#" method="post">
+        <input type="text" id="new-book">
+        <input type="submit" value="add book">
+      </form>
+  
+      <div id="list">
+        <h2>My book list</h2>
+        <ul id="listBooks">
+        </ul>
+      </div>
     <script src="script.js"></script>
   </body>
 </html>
