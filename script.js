@@ -14,3 +14,18 @@ fetch('http://localhost:3000/popularBooks')
 })
 
 
+
+const newBook = document.getElementById("create-book-form");
+const theList = document.getElementById("listBooks");
+
+
+const createNewBook = e => { 
+    e.preventDefault(); 
+    const newBook = document.createElement('li');
+  
+    newBook.innerText = newBook.value;
+    createButton(bookButton);
+    theList.appendChild(bookButton);
+  
+    e.target.reset();
+  };
