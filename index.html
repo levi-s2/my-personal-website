@@ -6,22 +6,25 @@
   </head>
   <body>
     <h1>Popular Books</h1>
-    <div id="card">
+    <div id="book-cards">
     </div>
 
-    <div id="list-content">
-      <h1>Create your own book list</h1>
+    <div id="book-list">
+      <h1>Create your own book-list!</h1>
   
-      <form id="create-book-form" action="#" method="post">
-        <input type="text" id="new-book">
-        <input type="submit" value="add book">
+      <form id="create-task-form" action="#" method="post">
+        <label for="new-task-description">Book name:</label>
+        <input type="text" id="new-task-description" name="new-task-description" placeholder="description">
+        <input type="submit" value="add to list">
       </form>
   
       <div id="list">
-        <h2>My book list!</h2>
-        <ul id="listBooks">
+        <h2>My list</h2>
+        <ul id="books">
         </ul>
       </div>
-    <script src="script.js"></script>
+  
+      <script src="script.js"></script>
+    </div>
   </body>
 </html>

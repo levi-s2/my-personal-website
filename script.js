@@ -10,22 +10,37 @@ fetch('http://localhost:3000/popularBooks')
             </div>
             `
     })
-    document.querySelector("#card").innerHTML += booksCard.join('')
+    document.querySelector("#book-cards").innerHTML += booksCard.join('')
 })
 
 
 
-const newBook = document.getElementById("create-book-form");
-const theList = document.getElementById("listBooks");
+const newTaskDescription = document.getElementById("new-task-description");
+const theList = document.getElementById("books");
 
+const createNewTask = event => { 
+  event.preventDefault(); 
+  const newTask = document.createElement('li');
 
-const createNewBook = e => { 
-    e.preventDefault(); 
-    const newBook = document.createElement('li');
-  
-    newBook.innerText = newBook.value;
-    createButton(bookButton);
-    theList.appendChild(bookButton);
-  
-    e.target.reset();
-  };
+  newTask.innerText = newTaskDescription.value;
+  createButton(newTask);
+  theList.appendChild(newTask);
+
+  event.target.reset();
+};
+
+const createButton = task => {
+   const btn = document.createElement('button');
+    btn.innerText = "X";
+
+    task.appendChild(btn);
+    btn.addEventListener('click',  (e) => deleteTask(e));
+}
+
+const deleteTask = (e) => {
+  const selectedTask = e.target.parentElement;
+  theList.removeChild(selectedTask);
+}
+
+document.querySelector('#create-task-form').addEventListener("submit"
+, (e) => createNewTask(e))
