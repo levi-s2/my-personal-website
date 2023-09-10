@@ -1,3 +1,4 @@
+//geting data from the database and displaying the books on the website
 fetch('http://localhost:3000/popularBooks')
 .then(r => r.json())
 .then(books => {
@@ -13,7 +14,7 @@ fetch('http://localhost:3000/popularBooks')
     document.querySelector("#book-cards").innerHTML += booksCard.join('')
 })
 
-
+//adds the value the user inputs as an element of a list
 
 const newTaskDescription = document.getElementById("new-task-description");
 const theList = document.getElementById("books");
@@ -28,6 +29,8 @@ const createNewTask = event => {
 
   event.target.reset();
 };
+
+//creates a delete button for each book added to the list
 
 const createButton = task => {
    const btn = document.createElement('button');
