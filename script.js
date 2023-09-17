@@ -7,6 +7,9 @@ fetch('http://localhost:3000/popularBooks')
             <div class="animeCard">
             <h2>${book.name}</h2>
             <h2>${book.author}</h2>
+            <ul>
+            <li class="like">Like! <span class="like-glyph">&#x2661;</span></li>
+          </ul>
             <img src=${book.imgURL}/>
             </div>
             `
@@ -14,16 +17,17 @@ fetch('http://localhost:3000/popularBooks')
     document.querySelector("#book-cards").innerHTML += booksCard.join('')
 })
 
-//adds the value the user inputs as an element of a list
 
-const newTaskDescription = document.getElementById("new-task-description");
+const newItem = document.getElementById("new-item");
 const theList = document.getElementById("books");
+
+//adds the value the user inputs as an element of a list
 
 const createNewTask = event => { 
   event.preventDefault(); 
   const newTask = document.createElement('li');
 
-  newTask.innerText = newTaskDescription.value;
+  newTask.innerText = newItem.value;
   createButton(newTask);
   theList.appendChild(newTask);
 
@@ -34,7 +38,7 @@ const createNewTask = event => {
 
 const createButton = task => {
    const btn = document.createElement('button');
-    btn.innerText = "X";
+    btn.innerText = " X";
 
     task.appendChild(btn);
     btn.addEventListener('click',  (e) => deleteTask(e));
@@ -47,3 +51,28 @@ const deleteTask = (e) => {
 
 document.querySelector('#create-task-form').addEventListener("submit"
 , (e) => createNewTask(e))
+
+
+
+
+
+
+
+const EMPTY_HEART = '♡'
+const FULL_HEART = '♥'
+
+let likes = document.querySelectorAll('.like-glyph')
+
+for (heart of likes) {
+  heart.addEventListener('click', addLike)
+}
+
+function addLike(e) {
+  e.target = heart
+  if ( heart.innerText === EMPTY_HEART) {
+    heart.innerText = FULL_HEART;
+    
+  } else {
+    heart.innerText = EMPTY_HEART;
+}
+}
