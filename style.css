@@ -19,4 +19,6 @@ body {
  max-height: 100%;
   }
 
-  
+  .like-button {
+    cursor: pointer;
+  }

@@ -7,14 +7,31 @@ fetch('http://localhost:3000/popularBooks')
             <div class="animeCard">
             <h2>${book.name}</h2>
             <h2>${book.author}</h2>
-            <ul>
-            <li class="like">Like! <span class="like-glyph">&#x2661;</span></li>
-          </ul>
+            <li><span class="like-button">like</span></li>
             <img src=${book.imgURL}/>
             </div>
             `
     })
     document.querySelector("#book-cards").innerHTML += booksCard.join('')
+
+    
+    //functionality of the like button
+
+let likes = document.querySelectorAll('.like-button')
+
+for (heart of likes) {
+  heart.addEventListener('click', addLike)
+}
+
+function addLike(event) {
+  let like = event.target
+  if ( like.textContent === 'like') {
+    like.textContent = 'LIKED';
+    
+  } else {
+    like.textContent = 'like';
+}
+}
 })
 
 
@@ -23,15 +40,14 @@ const theList = document.getElementById("books");
 
 //adds the value the user inputs as an element of a list
 
-const createNewTask = event => { 
-  event.preventDefault(); 
+const createNewTask = e => { 
+  e.preventDefault(); 
   const newTask = document.createElement('li');
 
   newTask.innerText = newItem.value;
   createButton(newTask);
   theList.appendChild(newTask);
-
-  event.target.reset();
+  e.target.reset();
 };
 
 //creates a delete button for each book added to the list
@@ -52,27 +68,3 @@ const deleteTask = (e) => {
 document.querySelector('#create-task-form').addEventListener("submit"
 , (e) => createNewTask(e))
 
-
-
-
-
-
-
-const EMPTY_HEART = '♡'
-const FULL_HEART = '♥'
-
-let likes = document.querySelectorAll('.like-glyph')
-
-for (heart of likes) {
-  heart.addEventListener('click', addLike)
-}
-
-function addLike(e) {
-  e.target = heart
-  if ( heart.innerText === EMPTY_HEART) {
-    heart.innerText = FULL_HEART;
-    
-  } else {
-    heart.innerText = EMPTY_HEART;
-}
-}
